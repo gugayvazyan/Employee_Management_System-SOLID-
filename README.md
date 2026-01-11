@@ -54,6 +54,62 @@ So employees like **President** (who does not implement `ISalaried`) are **skipp
 
 ## 📁 Files (overview)
 
+---
+
+## 🌳 Project Structure
+
+> Clean view for GitHub — compact on the page, full tree inside.
+
+### ✅ Compact
+```text
+.
+├── include/                # headers
+├── src/                    # implementation (.cpp)
+├── build/                  # generated (ignored)
+├── main.cpp
+├── Makefile
+└── README.md
+```
+
+<details>
+<summary><b>📦 Full tree (click to expand)</b></summary>
+
+```text
+.
+├── include/
+│   ├── Employee.h
+│   ├── ISalaried.h
+│   ├── Developer.h
+│   ├── Manager.h
+│   ├── Accountant.h
+│   ├── SalesPerson.h
+│   ├── President.h
+│   ├── EmployeeRepository.h
+│   └── PayrollService.h
+├── src/
+│   ├── Employee.cpp
+│   ├── ISalaried.cpp
+│   ├── Developer.cpp
+│   ├── Manager.cpp
+│   ├── Accountant.cpp
+│   ├── SalesPerson.cpp
+│   ├── President.cpp
+│   ├── EmployeeRepository.cpp
+│   └── PayrollService.cpp
+├── main.cpp
+├── Makefile
+└── README.md
+```
+
+</details>
+
+### 🧰 Generate tree automatically (macOS)
+```bash
+brew install tree
+tree -a -I ".git|build|.DS_Store"
+```
+
+
 | File | Purpose |
 |---|---|
 | `Employee.h/.cpp` | Abstract employee base + auto-incrementing id |
@@ -68,45 +124,20 @@ So employees like **President** (who does not implement `ISalaried`) are **skipp
 
 ---
 
----
-## 🌳 Project Tree
-.
-├── Makefile
-├── include
-│   ├── Accountant.h
-│   ├── Developer.h
-│   ├── Employee.h
-│   ├── EmployeeRepository.h
-│   ├── ISalaried.h
-│   ├── Manager.h
-│   ├── PayrollService.h
-│   ├── President.h
-│   └── SalesPerson.h
-└── src
-    ├── Accountant.cpp
-    ├── Developer.cpp
-    ├── Employee.cpp
-    ├── EmployeeRepository.cpp
-    ├── ISalaried.cpp
-    ├── Manager.cpp
-    ├── PayrollService.cpp
-    ├── President.cpp
-    ├── SalesPerson.cpp
-    └── main.cpp
+## ⚙️ Build & Run
 
----
-
-## ⚙️ Build & Run (Makefile)
-
-This project includes a simple Makefile that automatically builds all `*.cpp` files and puts object files into `build/`.
-
-### ✅ Build
+### Compile (single command)
 ```bash
-make
-✅ Run
-./vayvay
-✅ Clean
-make clean
+g++ -std=c++17 -Wall -Wextra \
+  Employee.cpp ISalaried.cpp EmployeeRepository.cpp PayrollService.cpp \
+  Developer.cpp Manager.cpp Accountant.cpp SalesPerson.cpp President.cpp \
+  main.cpp -o payroll
+```
+
+### Run
+```bash
+./payroll
+```
 
 ---
 
@@ -170,4 +201,3 @@ int main() {
 ## 📜 License
 
 This project is intended for learning and educational purposes.
-
