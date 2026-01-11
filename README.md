@@ -104,11 +104,6 @@ So employees like **President** (who does not implement `ISalaried`) are **skipp
 </details>
 
 ### 🧰 Generate tree automatically (macOS)
-```bash
-brew install tree
-tree -a -I ".git|build|.DS_Store"
-```
-
 
 | File | Purpose |
 |---|---|
