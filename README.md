@@ -124,19 +124,21 @@ tree -a -I ".git|build|.DS_Store"
 
 ---
 
-## ⚙️ Build & Run
+## ⚙️ Build & Run (Makefile)
 
-### Compile (single command)
+### ✅ Build
 ```bash
-g++ -std=c++17 -Wall -Wextra \
-  Employee.cpp ISalaried.cpp EmployeeRepository.cpp PayrollService.cpp \
-  Developer.cpp Manager.cpp Accountant.cpp SalesPerson.cpp President.cpp \
-  main.cpp -o payroll
+make
 ```
 
-### Run
+### ✅ Run
 ```bash
-./payroll
+./vayvay
+```
+
+### 🧹 Clean
+```bash
+make clean
 ```
 
 ---
