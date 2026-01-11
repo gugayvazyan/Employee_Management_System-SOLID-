@@ -186,15 +186,6 @@ int main() {
 
 ---
 
-## 🗺️ Next improvements (optional)
-
-- Add input validation and richer error messages
-- Fix `delEmpl()` so it prints “ID not found” only once (after the loop)
-- Add unit tests for salary formulas
-- Add a menu-driven CLI for HR operations (add/list/delete/pay)
-
----
-
 ## 📜 License
 
 This project is intended for learning and educational purposes.
