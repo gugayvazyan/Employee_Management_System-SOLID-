@@ -68,20 +68,45 @@ So employees like **President** (who does not implement `ISalaried`) are **skipp
 
 ---
 
-## ⚙️ Build & Run
+---
+## 🌳 Project Tree
+.
+├── Makefile
+├── include
+│   ├── Accountant.h
+│   ├── Developer.h
+│   ├── Employee.h
+│   ├── EmployeeRepository.h
+│   ├── ISalaried.h
+│   ├── Manager.h
+│   ├── PayrollService.h
+│   ├── President.h
+│   └── SalesPerson.h
+└── src
+    ├── Accountant.cpp
+    ├── Developer.cpp
+    ├── Employee.cpp
+    ├── EmployeeRepository.cpp
+    ├── ISalaried.cpp
+    ├── Manager.cpp
+    ├── PayrollService.cpp
+    ├── President.cpp
+    ├── SalesPerson.cpp
+    └── main.cpp
 
-### Compile (single command)
-```bash
-g++ -std=c++17 -Wall -Wextra \
-  Employee.cpp ISalaried.cpp EmployeeRepository.cpp PayrollService.cpp \
-  Developer.cpp Manager.cpp Accountant.cpp SalesPerson.cpp President.cpp \
-  main.cpp -o payroll
-```
+---
 
-### Run
+## ⚙️ Build & Run (Makefile)
+
+This project includes a simple Makefile that automatically builds all `*.cpp` files and puts object files into `build/`.
+
+### ✅ Build
 ```bash
-./payroll
-```
+make
+✅ Run
+./vayvay
+✅ Clean
+make clean
 
 ---
 
@@ -145,4 +170,4 @@ int main() {
 ## 📜 License
 
 This project is intended for learning and educational purposes.
-# Employee_Management_System-SOLID-
+
