@@ -103,7 +103,7 @@ So employees like **President** (who does not implement `ISalaried`) are **skipp
 
 </details>
 
-### 🧰 Generate tree automatically (macOS)
+### 🧰 
 
 | File | Purpose |
 |---|---|
